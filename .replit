@@ -54,3 +54,12 @@ waitForPort = 5000
 
 [workflows.workflow.metadata]
 outputType = "webview"
+
+[[workflows.workflow]]
+name = "Doxker"
+mode = "sequential"
+author = 49828600
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm install -g serve"
