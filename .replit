@@ -1,10 +1,11 @@
 entrypoint = "index.ts"
 
 hidden = [".config", "bun.lock"]
-modules = ["bun-1.2"]
+modules = ["nodejs-20", "nodejs-24", "bash"]
 
 [nix]
 channel = "stable-24_11"
+packages = ["docker-compose"]
 
 [deployment]
 build = ["sh", "-c", "bun build --target=bun --outdir=dist index.ts"]
@@ -20,8 +21,12 @@ localPort = 5000
 externalPort = 80
 
 [[ports]]
-localPort = 45673
+localPort = 5001
 externalPort = 3000
+
+[[ports]]
+localPort = 5002
+externalPort = 3001
 
 [agent]
 expertMode = true
