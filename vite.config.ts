@@ -7,7 +7,7 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5000,
     allowedHosts: [
-      "fed5893a-048b-47e9-969c-854a5eba271a-00-jsvs1du173e6.janeway.replit.dev"
+      "b8ae669d-abd4-40a3-9a3f-c7a9bed88ac4-00-79mhdmsu1yhh.riker.replit.dev"
     ],
     watch: {
       ignored: ['**/.cache/**', '**/node_modules/**'],
@@ -15,5 +15,3 @@ export default defineConfig({
   },
   optimizeDeps: {
     exclude: [],
-  },
-});
